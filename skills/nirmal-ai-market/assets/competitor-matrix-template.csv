@@ -1,0 +1,4 @@
+competitor,type,target_customer,positioning_oneliner,core_capabilities,pricing_model,value_metric,entry_price,key_strength,exploitable_weakness,source_url
+Example Co A,direct,Mid-market ops teams,"All-in-one ops platform","workflows, reporting, integrations",tiered per-seat,seat,$25/seat/mo,Brand + integrations,Expensive for small teams; complex onboarding,
+Example Co B,indirect,SMB founders,"Spreadsheet-native tracking","templates, light automation",flat,workspace,$15/mo flat,Cheap + familiar,Hits a ceiling fast; no real automation,
+Status quo,do-nothing,All segments,"We just use spreadsheets + email","manual",free,n/a,$0,Zero cost + no switching,Error-prone, doesn't scale, invisible time cost,

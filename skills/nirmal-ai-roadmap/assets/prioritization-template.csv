@@ -1,0 +1,4 @@
+id,item,linked_use_case,objective_metric,reach,impact,confidence,effort_pm,rice_score,priority,dependency,decision_notes
+F-001,Example: one-click onboarding,UC-003,Activation rate,4000,2,0.8,1.5,4267,P0 / MVP,—,Core activation path — protect from scope creep
+F-002,Example: team invites,UC-005,Referral,1500,1,0.8,1,1200,P1 / fast-follow,F-001,Completes the loop after core validated
+F-003,Example: advanced analytics,UC-011,Engagement,800,1,0.5,3,133,P2 / later,F-001,Low confidence + high effort — park with reason

@@ -1,0 +1,7 @@
+event_name,trigger_moment,source,identity,properties,feeds_metric,notes
+workspace_created,Fires server-side when a workspace row is committed,server,user_id+account_id,"account_id:string:req | plan:enum(free|pro|enterprise):req | template_used:bool:req",Activation rate; North star,Core activation step
+project_created,Fires server-side on first successful project save,server,user_id+account_id,"workspace_id:string:req | project_type:enum:req",Activation rate,First-value action
+project_shared,Fires server-side when a share invite is sent,server,user_id+account_id,"project_id:string:req | invitee_count:int:req",Referral; Engagement,Viral loop entry
+invite_accepted,Fires server-side when invitee completes signup,server,user_id+account_id,"inviter_user_id:string:req | account_id:string:req",Referral; Acquisition,Stitch anonymous->identified here
+signup_completed,Fires server-side on account creation,server,user_id+account_id,"signup_channel:string:req | plan:enum:req",Acquisition; Activation funnel top,Alias anonymous id on this event
+subscription_upgraded,Fires server-side on successful payment,server,user_id+account_id,"from_plan:enum:req | to_plan:enum:req | mrr_delta:int:req",Revenue,Server-side only; never client

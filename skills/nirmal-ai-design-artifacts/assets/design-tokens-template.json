@@ -1,0 +1,53 @@
+{
+  "$schema": "design-tokens",
+  "meta": {
+    "product": "",
+    "brandIntent": "",
+    "modes": ["light", "dark"]
+  },
+  "color": {
+    "brand": { "50": "", "100": "", "200": "", "300": "", "400": "", "500": "", "600": "", "700": "", "800": "", "900": "" },
+    "accent": { "default": "", "hover": "", "subtle": "" },
+    "neutral": { "0": "", "50": "", "100": "", "200": "", "300": "", "400": "", "500": "", "600": "", "700": "", "800": "", "900": "", "1000": "" },
+    "light": {
+      "surface": { "base": "", "raised": "", "sunken": "", "overlay": "" },
+      "text": { "default": "", "muted": "", "inverse": "" },
+      "border": { "default": "", "strong": "" }
+    },
+    "dark": {
+      "surface": { "base": "", "raised": "", "sunken": "", "overlay": "" },
+      "text": { "default": "", "muted": "", "inverse": "" },
+      "border": { "default": "", "strong": "" }
+    },
+    "status": {
+      "success": { "fg": "", "bg": "" },
+      "warning": { "fg": "", "bg": "" },
+      "error": { "fg": "", "bg": "" },
+      "info": { "fg": "", "bg": "" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": "",
+      "body": "",
+      "mono": ""
+    },
+    "fontWeight": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700 },
+    "fontSize": { "caption": "", "body-sm": "", "body": "", "body-lg": "", "h3": "", "h2": "", "h1": "", "display": "" },
+    "lineHeight": { "tight": "", "snug": "", "normal": "", "relaxed": "" },
+    "letterSpacing": { "tight": "", "normal": "", "wide": "" },
+    "textStyles": {
+      "display": { "fontFamily": "display", "fontSize": "display", "lineHeight": "tight", "fontWeight": "bold" },
+      "h1": {}, "h2": {}, "h3": {}, "body": {}, "body-sm": {}, "caption": {}, "overline": {}
+    }
+  },
+  "spacing": { "0": "0", "1": "4px", "2": "8px", "3": "12px", "4": "16px", "6": "24px", "8": "32px", "12": "48px", "16": "64px" },
+  "radius": { "none": "0", "sm": "", "md": "", "lg": "", "full": "9999px" },
+  "elevation": { "flat": "none", "raised": "", "overlay": "", "modal": "" },
+  "motion": {
+    "duration": { "fast": "120ms", "base": "200ms", "slow": "320ms" },
+    "easing": { "standard": "", "enter": "", "exit": "" }
+  },
+  "border": { "width": { "default": "1px", "strong": "2px" } },
+  "focus": { "ring": { "color": "", "width": "2px", "offset": "2px" } }
+}

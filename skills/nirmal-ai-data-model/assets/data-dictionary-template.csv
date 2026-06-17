@@ -1,0 +1,11 @@
+entity,glossary_id,attribute,type,nullable,key,constraint,index,serves_query,pii,notes
+account,T-001,id,uuid(v7),no,PK,,,lookup by id,no,v7 keeps index locality
+account,T-001,name,text,no,,,,,no,
+account,T-001,plan,enum(free|pro|enterprise),no,,CHECK in set,,filter by plan,no,
+workspace,T-002,id,uuid(v7),no,PK,,,lookup by id,no,
+workspace,T-002,account_id,uuid,no,FK->account.id,ON DELETE CASCADE,"idx(account_id)",list workspaces by account,no,
+workspace,T-002,created_at,timestamptz,no,,,"idx(account_id, created_at)",recent workspaces per account,no,UTC
+membership,T-003,user_id,uuid,no,"PK part, FK->user.id",,,join entity user<->workspace,no,resolves M:N
+membership,T-003,workspace_id,uuid,no,"PK part, FK->workspace.id",,,,no,
+membership,T-003,role,enum(owner|admin|member),no,,CHECK in set,,authz checks,no,
+user,T-004,email,citext,no,,UNIQUE per scope,"uniq idx(email)",login lookup,yes,encrypt-at-rest; GDPR erase

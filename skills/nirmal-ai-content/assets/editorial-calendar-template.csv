@@ -1,0 +1,5 @@
+publish_date,title,pillar,funnel_stage,format,channel_primary,target_keyword,intent,serves_metric,cta,repurpose_into,status
+2026-07-01,Why <X> is getting harder for <ICP>,Problem space,TOFU,blog,SEO,"<x problem>",informational,Traffic,Subscribe,"LinkedIn thread + 3 social posts",idea
+2026-07-08,How teams solve <X>: 4 approaches compared,Approaches,MOFU,blog,SEO,"best ways to <x>",commercial,Signups,Free trial,"Newsletter issue + carousel",idea
+2026-07-15,<Product> vs <Alternative>: an honest comparison,Decision,BOFU,blog,SEO,"<product> vs <alt>",transactional,Signups,Start free,"Sales battle card",idea
+2026-07-18,The shift behind <category> (POV piece),Category narrative,TOFU,article,LinkedIn,"—",none,Brand,Follow,"Thread + newsletter",idea
