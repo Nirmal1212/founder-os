@@ -1,5 +1,5 @@
 # Launch plan (Tier 2: public beta)
-<!-- Produced by: founder-os-launch. Reads positioning.md, roadmap.md. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: launch. Reads positioning.md, roadmap.md. ILLUSTRATIVE SAMPLE. -->
 
 **Goal:** 25 design-partner accounts live and 100 waitlist sign-ups, in line with the north star (D-005).
 

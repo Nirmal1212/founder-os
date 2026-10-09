@@ -1,0 +1,9 @@
+{
+  "name": "founder-os",
+  "version": "0.2.0",
+  "description": "Senior-specialist skills for running a tech startup: research, product, architecture, data, design, market, positioning, content, launch and sales, all sharing one source-of-truth context.",
+  "author": { "name": "Nirmalkumar Sathiamurthi" },
+  "homepage": "https://github.com/Nirmal1212/founder-os",
+  "repository": "https://github.com/Nirmal1212/founder-os",
+  "keywords": ["startup", "product", "architecture", "go-to-market", "skills"]
+}

@@ -1,5 +1,5 @@
 # Northwind Pulse — Project Context
-<!-- Produced by: founder-os-context (Mode A). ILLUSTRATIVE SAMPLE: fictional product, all figures are made-up placeholders. -->
+<!-- Produced by: context (Mode A). ILLUSTRATIVE SAMPLE: fictional product, all figures are made-up placeholders. -->
 
 version: 3 · last_updated: 2026-10-09
 

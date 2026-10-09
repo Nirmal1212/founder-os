@@ -1,5 +1,5 @@
 # HLD — Northwind Pulse
-<!-- Produced by: founder-os-architect. Read context v2; wrote back D-003. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: architect. Read context v2; wrote back D-003. ILLUSTRATIVE SAMPLE. -->
 
 ## Architecturally significant requirements
 - Daily scoring of ~50k Accounts (T-001) in under 30 minutes.

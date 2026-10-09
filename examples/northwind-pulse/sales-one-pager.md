@@ -1,5 +1,5 @@
 # Northwind Pulse — one-pager
-<!-- Produced by: founder-os-sales. Reads positioning.md and context.md. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: sales. Reads positioning.md and context.md. ILLUSTRATIVE SAMPLE. -->
 
 ## Stop finding out about churn at renewal
 Northwind Pulse joins your HubSpot, Stripe and product data into one Health Score per account, and alerts your team in Slack when an account is slipping.

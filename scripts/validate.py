@@ -5,8 +5,8 @@ Checks:
   - frontmatter: name == folder name, description present and <= 1024 chars
   - every `references/` / `assets/` path mentioned in a SKILL.md exists
   - every file under references/ and assets/ is mentioned in its SKILL.md
-  - every `founder-os-*` mention resolves to an existing skill
-  - SKILL.md has a Depends on / Feeds line; non-context skills mention founder-os-context
+  - every skill named on a Depends on / Feeds line exists
+  - SKILL.md has a Depends on / Feeds line; non-context skills mention `context`
   - examples/ reuse only IDs (T-/D-/P-/C-) that are defined in the example context.md
 
 Usage: python -I scripts/validate.py [--write-index]
@@ -23,7 +23,8 @@ GROUPS = {
                               "architect", "lld", "data-model"],
     "Go-to-market": ["market", "positioning", "content", "launch", "sales"],
 }
-PREFIX = "founder-os-"
+PREFIX = ""
+NON_SKILL = {"frontend-design", "docx", "pptx"}  # external skills allowed on Depends/Feeds lines
 
 
 def frontmatter(text):
@@ -56,8 +57,8 @@ def main():
             errors.append(f"{d.name}: description {len(desc)} chars > 1024")
         if "**Depends on:**" not in text:
             errors.append(f"{d.name}: missing Depends on / Feeds line")
-        if d.name != PREFIX + "context" and PREFIX + "context" not in text:
-            errors.append(f"{d.name}: never mentions {PREFIX}context")
+        if d.name != "context" and "`context`" not in text:
+            errors.append(f"{d.name}: never mentions `context`")
         mentioned = set(re.findall(r"(?<![\w/\-])(?:references|assets)/[\w.\-]+", text))
         for ref in mentioned:
             if not (d / ref).exists():
@@ -66,9 +67,10 @@ def main():
             for f in (d / sub).glob("*") if (d / sub).exists() else []:
                 if f"{sub}/{f.name}" not in text:
                     errors.append(f"{d.name}: orphan file {sub}/{f.name} (not linked)")
-        for other in set(re.findall(r"founder-os-[a-z\-]+", text)):
-            if other not in names:
-                errors.append(f"{d.name}: mentions unknown skill {other}")
+        line = re.search(r"\*\*Depends on:\*\*.*", text)
+        for other in set(re.findall(r"`([a-z][a-z\-]*)`", line.group(0) if line else "")):
+            if other not in names and other not in NON_SKILL:
+                errors.append(f"{d.name}: Depends/Feeds names unknown skill {other}")
 
     # example ID consistency
     ctx = ROOT / "examples" / "northwind-pulse" / "context.md"

@@ -1,5 +1,5 @@
 # LLD — API and key flow
-<!-- Produced by: founder-os-lld. Read context v3 (glossary terms T-001..T-004, D-003). ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: lld. Read context v3 (glossary terms T-001..T-004, D-003). ILLUSTRATIVE SAMPLE. -->
 
 ## Endpoints (REST, JSON, bearer auth)
 | Method | Path | Purpose | Notes |
