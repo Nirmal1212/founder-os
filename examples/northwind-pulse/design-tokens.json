@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "produced_by": "founder-os-design-artifacts",
+    "intent": "Calm and trustworthy: a tool that explains itself (research theme 3)",
+    "personas": ["P-001", "P-002"],
+    "note": "ILLUSTRATIVE SAMPLE"
+  },
+  "color": {
+    "brand": { "primary": "#1F4FD8", "primaryHover": "#173CA8" },
+    "neutral": { "bg": "#F7F8FA", "surface": "#FFFFFF", "border": "#DDE1E8", "text": "#1B1F27", "muted": "#5B6472" },
+    "health": { "good": "#1E8E5A", "watch": "#B7791F", "risk": "#C53030" }
+  },
+  "typography": {
+    "family": { "sans": "Inter, system-ui, sans-serif", "mono": "JetBrains Mono, monospace" },
+    "scale": { "xs": "12px", "sm": "14px", "base": "16px", "lg": "20px", "xl": "28px" }
+  },
+  "spacing": { "1": "4px", "2": "8px", "3": "12px", "4": "16px", "6": "24px" },
+  "radius": { "sm": "4px", "md": "8px" },
+  "patterns": {
+    "healthBadge": "Score number plus label; never color alone (accessibility)",
+    "whyPanel": "Ranked list of the top 3 Signals with direction arrows and plain-language text",
+    "alertCard": "Account, score change, one-line reason, primary action 'Log action'"
+  }
+}

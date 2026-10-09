@@ -1,0 +1,8 @@
+ID,Persona,Use Case,Description,Lifecycle Stage,Priority,MVP,Rationale,Dependencies,Status,Open Questions / Notes
+UC-01,P-002,Connect data sources,Admin connects HubSpot Stripe and Segment via OAuth,Onboarding,P0,Yes,Nothing works without data (D-004),,Approved,
+UC-02,P-001,See account health at a glance,Head of CS views ranked list of Accounts by Health Score,Core loop,P0,Yes,Replaces the Monday spreadsheet,UC-01,Approved,
+UC-03,P-001,Get alerted to at-risk account,Risk Alert sent to Slack when score drops,Retention,P0,Yes,Core value (D-002),UC-02,Approved,Threshold owner TBD
+UC-04,P-001,Understand why a score changed,Panel lists top Signals driving the change,Core loop,P0,Yes,Addresses trust risk (research theme 3),UC-02,Approved,
+UC-05,P-002,Tune Signal weights,CS Ops adjusts weights per segment,Core loop,P1,No,Fast-follow after calibration,UC-02,Proposed,
+UC-06,P-001,Receive weekly digest,Email summary of movers and open alerts,Retention,P1,No,Habit loop for execs,UC-03,Proposed,
+UC-07,P-001,Run a save playbook,Scripted actions after a Risk Alert,Retention,P2,No,Deferred (D-002),UC-03,Deferred,
