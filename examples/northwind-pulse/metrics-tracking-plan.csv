@@ -1,0 +1,9 @@
+Event,Trigger,Properties,Identity,Feeds Metric,Owner
+integration_connected,Admin completes OAuth,"source (hubspot|stripe|segment), account_count",user_id + org_id,Activation,Eng
+health_score_computed,Daily scoring job finishes,"account_id, score, prev_score, signal_count",account_id,Coverage,Eng
+risk_alert_sent,Alert delivered,"account_id, channel (slack|email), score, delta_7d",account_id,Alert volume,Eng
+risk_alert_acted,CSM logs an action on an alert,"alert_id, action_type, minutes_since_alert",user_id,North star (D-005),Eng
+score_explanation_opened,User opens the why panel,"account_id, signal_ids_shown",user_id,Trust (PRD goal 3),Eng
+weekly_digest_opened,Digest email opened,"digest_id",user_id,Retention,Marketing Ops
+
+# Metric tree: North star = Accounts with a Risk Alert acted on within 48h (D-005). Inputs: integration activation, alert precision, time to action. Guardrail: alert fatigue (alerts per CSM per week under 10).
