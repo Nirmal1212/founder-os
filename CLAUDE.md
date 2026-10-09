@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This repo is a library of Claude skills (`skills/founder-os-*/SKILL.md`), not an application.
+This repo is a library of Claude skills (`skills/*/SKILL.md`), not an application.
 
 ## Layout
 - `skills/<name>/SKILL.md` plus `references/` (frameworks) and `assets/` (templates). Folder name must equal frontmatter `name`.

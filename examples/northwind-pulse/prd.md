@@ -1,5 +1,5 @@
 # PRD — Northwind Pulse MVP
-<!-- Produced by: founder-os-pm (Mode B). Read context v1. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: pm (Mode B). Read context v1. ILLUSTRATIVE SAMPLE. -->
 
 ## Problem
 CS teams at 50–200 person SaaS companies discover churn at renewal, too late to act (research theme 1), because account health is spread across tools (theme 2).

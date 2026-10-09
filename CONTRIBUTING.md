@@ -1,7 +1,7 @@
 # Contributing
 
 ## Add a skill
-1. Create `skills/founder-os-<role>/SKILL.md` with frontmatter `name` (equal to the folder) and `description` (1024 characters or fewer).
+1. Create `skills/<role>/SKILL.md` with frontmatter `name` (equal to the folder) and `description` (1024 characters or fewer).
 2. Write the description as: role, what it produces, "Use this skill whenever..." trigger phrases, then a "Not for:" line naming neighbouring skills.
 3. Body structure: persona intro, **Depends on / Feeds** line, context protocol, steps or modes, delivery format, quality bar ("what makes this senior rather than junior").
 4. Put frameworks in `references/` and templates in `assets/`; link each from SKILL.md.

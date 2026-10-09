@@ -1,5 +1,5 @@
 # Market sizing and competitors
-<!-- Produced by: founder-os-market. ILLUSTRATIVE SAMPLE: every number below is a made-up placeholder, NOT real data. In real use this skill cites live web sources. -->
+<!-- Produced by: market. ILLUSTRATIVE SAMPLE: every number below is a made-up placeholder, NOT real data. In real use this skill cites live web sources. -->
 
 ## Bottom-up sizing (placeholder inputs)
 | Step | Assumption | Value |

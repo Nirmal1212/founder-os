@@ -1,0 +1,13 @@
+{
+  "name": "founder-os",
+  "description": "founder-os: skills for running a tech startup.",
+  "owner": { "name": "Nirmalkumar Sathiamurthi" },
+  "plugins": [
+    {
+      "name": "founder-os",
+      "source": "./",
+      "description": "Startup operating skills: context, research, pm, roadmap, metrics, design, architecture, data model, market, positioning, content, launch, sales.",
+      "version": "0.2.0"
+    }
+  ]
+}

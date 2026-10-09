@@ -1,5 +1,5 @@
 # Positioning and messaging house
-<!-- Produced by: founder-os-positioning. Read context v3 and market-sizing.md. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: positioning. Read context v3 and market-sizing.md. ILLUSTRATIVE SAMPLE. -->
 
 ## Positioning canvas
 | Element | Answer |

@@ -1,5 +1,5 @@
 # Research synthesis — churn visibility
-<!-- Produced by: founder-os-research (Mode B + C). Read context v1; wrote back P-001, P-002, D-001. ILLUSTRATIVE: interviews are fictional. -->
+<!-- Produced by: research (Mode B + C). Read context v1; wrote back P-001, P-002, D-001. ILLUSTRATIVE: interviews are fictional. -->
 
 **Method:** 8 customer-discovery interviews (Heads of CS and CS Ops, 50–200 person SaaS). Confidence: medium (n=8, one segment, recruited via warm intros).
 

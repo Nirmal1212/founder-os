@@ -1,5 +1,5 @@
 # Data model — ERD and schema notes
-<!-- Produced by: founder-os-data-model. Read context v3 and lld-api.md. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: data-model. Read context v3 and lld-api.md. ILLUSTRATIVE SAMPLE. -->
 
 ```mermaid
 erDiagram

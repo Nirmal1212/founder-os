@@ -6,11 +6,11 @@ A library of Claude skills that cover the work a tech startup needs done, from f
 
 | Group | Skills |
 |---|---|
-| Foundation | `founder-os-context` (shared vision, ICP, glossary, decisions, constraints) |
+| Foundation | `context` (shared vision, ICP, glossary, decisions, constraints) |
 | Product & Engineering | `research` → `pm` → `roadmap`; `metrics`, `design-artifacts`; `architect` → `lld` ⇄ `data-model` |
 | Go-to-market | `market` → `positioning` → `content`, `launch`, `sales` |
 
-Full list with descriptions: [skills/INDEX.md](skills/INDEX.md). Every skill name is prefixed `founder-os-`.
+Full list with descriptions: [skills/INDEX.md](skills/INDEX.md). Skills are namespaced by the plugin, e.g. `/founder-os:pm`.
 
 ```mermaid
 flowchart LR
@@ -25,18 +25,26 @@ flowchart LR
 ```
 
 ## How the skills work together
-`founder-os-context` holds one `context.md` per project. Every other skill reads it first and writes new terms and decisions back last (rules in [protocols.md](skills/founder-os-context/references/protocols.md)). IDs (`T-`, `D-`, `P-`, `C-`) never change, so a decision made in research is still referenceable in the HLD.
+`context` holds one `context.md` per project. Every other skill reads it first and writes new terms and decisions back last (rules in [protocols.md](skills/context/references/protocols.md)). IDs (`T-`, `D-`, `P-`, `C-`) never change, so a decision made in research is still referenceable in the HLD.
 
 ## See it working
 [examples/northwind-pulse/](examples/northwind-pulse/) runs a fictional B2B SaaS through the whole chain. Read [examples/README.md](examples/README.md) first.
 
 ## Install
+### As a plugin (recommended)
+```
+/plugin marketplace add Nirmal1212/founder-os
+/plugin install founder-os@founder-os
+```
+Update later with `/plugin marketplace update founder-os`. Plugin skills are namespaced, e.g. `/founder-os:pm`; they also trigger automatically from plain-language requests.
+
+### Manual
 Copy or symlink the skill folders into one of:
 - `~/.claude/skills/` (all projects)
 - `<project>/.claude/skills/` (one project)
 
 ```bash
-ln -s "$(pwd)"/skills/founder-os-* ~/.claude/skills/
+ln -s "$(pwd)"/skills/* ~/.claude/skills/   # bare names like `pm` may clash with other skills; prefer the plugin
 ```
 On Windows, copy the folders, or use `mklink /D`.
 

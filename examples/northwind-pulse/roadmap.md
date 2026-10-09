@@ -1,5 +1,5 @@
 # Roadmap — Northwind Pulse
-<!-- Produced by: founder-os-roadmap. Read context v2; wrote back D-002. ILLUSTRATIVE SAMPLE. -->
+<!-- Produced by: roadmap. Read context v2; wrote back D-002. ILLUSTRATIVE SAMPLE. -->
 
 ## Prioritization (RICE, scores are illustrative)
 | Item | Reach | Impact | Confidence | Effort (wks) | RICE | Call |
